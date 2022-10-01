@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增学生</title>
+</head>
+<style>
+    h2 {
+        text-align: center
+    }
+    form {
+        width: 350px;
+        margin: 10px auto;
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        padding-left: 130px;
+    }
+
+    tr {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    input[type='text'], input[type='date'], select {
+        height: 25px;
+        line-height: 25px;
+        width: 150px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        background-color: #2795F7;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+</style>
+<body>
+<h2>添加学生信息</h2>
+<form action="regist.php" method="post">
+    <table>
+        <tr>
+            <td>学号：</td>
+            <td><input type="text" name="sno"></td>
+        </tr>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" name="sname"></td>
+        </tr>
+        <tr>
+            <td>班级：</td>
+            <td>
+                <select name="sclass">
+                    <option value="计算机应用技术1班">计算机应用技术1班</option>
+                    <option value="计算机应用技术2班">计算机应用技术2班</option>
+                    <option value="计算机应用技术3班">计算机应用技术3班</option>
+                    <option value="计算机应用技术4班">计算机应用技术4班</option>
+                    <option value="计算机应用技术5班">计算机应用技术5班</option>
+                    <option value="计算机应用技术6班">计算机应用技术6班</option>
+                    <option value="计算机应用技术7班">计算机应用技术7班</option>
+                    <option value="计算机应用技术8班">计算机应用技术8班</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>成绩：</td>
+            <td><input type="text" name="sgrade"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="立即提交" class="btn"/>
+                <input type="reset" value="重新填写" class="btn"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
